@@ -27,6 +27,46 @@ Performs a parameter sweep to explore the effect of varying inducer concentratio
 
 ---
 
+### Toggle Switch Simulation
+
+This simulation models a genetic toggle switch built from two genes that repress each other. Depending on initial conditions and parameter tuning, the system stabilizes in one of two possible states. It demonstrates bistability — a core concept in synthetic biology for creating memory circuits and biological logic systems. No external signal is used in this version.
+
+> Code for this circuit can be found in the files uploaded in this repositery under the name of toggle_test
+
+---
+
+### IPTG-Inducible Toggle Switch
+
+This simulation extends the classic toggle switch by introducing IPTG as an external input signal. When IPTG is present, it inhibits one of the repressors, allowing the circuit to flip into a new state. Even after the signal is removed, the system retains its ON state — demonstrating memory-like behavior. This models how cells can record past exposure to specific signals.
+
+> Code for this circuit can be found in the files uploaded in this repositery under the name of IPTG_toggle
+
+---
+
+### Synthetic Genetic AND Gate (Dual Input Control)
+
+This simulation models a genetic AND gate, where a target gene is expressed only when both input signals are present. The system mimics digital logic using biological components, combining two separate inducers to control a single output. It demonstrates how synthetic circuits can implement Boolean logic in living systems — a key feature in biosensors and programmable cells.
+
+> Code for this can be found in the files uploaded in this repositery under the name of AND_Gate
+
+---
+
+### Synthetic Genetic NOT Gate (Signal Repression)
+
+This simulation models a genetic NOT gate, where the presence of an input signal represses the output gene. When the input is absent, the output is high; when the input is present, the output is turned off. This simple but powerful logic structure is widely used in constructing more complex synthetic circuits like toggles, switches, and biosensor cascades.
+
+> Code for this can be found in the files uploaded in this repositery under the name of NOT_Gate
+
+---
+
+### Synthetic Genetic NAND Gate (Dual-Repression Logic)
+
+This simulation models a genetic NAND gate, where the output gene remains active unless both input signals are present simultaneously. The system uses dual repression to ensure that the output is only turned off under combined input conditions. As a universal logic gate, NAND can be used to construct any other logic function, making it a powerful component in synthetic biology circuit design.
+
+> Code for this can be found in the files uploaded in this repositery under the name of NAND_Gate
+
+
+
 ## ⚙️ Tools & Technologies
 
 - **Tellurium** (Python-based simulation)
