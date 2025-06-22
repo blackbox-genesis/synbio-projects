@@ -107,7 +107,15 @@ This simulation models a circuit which produces a gradual, linear-like increase 
 
 ---
 
-### 14. 
+### 14. Threshold-Activated Toggle Switch
+
+This simulation models a genetic circuit which has a bistable circuit that remains OFF at low input levels but flips ON once a critical IPTG threshold is crossed. Uses mutual repression and input-triggered derepression to lock the system in a stable ON state. Demonstrates switch-like behavior, signal memory, and threshold-based activation — key principles in genetic logic design.
+
+> Code for this can be found in the files uploaded in this repositery under the name of Threshold-activated_toggle_switch
+
+---
+
+
 ## ⚙️ Tools & Technologies
 
 - **Tellurium** (Python-based simulation)
