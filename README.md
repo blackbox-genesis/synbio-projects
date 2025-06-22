@@ -65,8 +65,49 @@ This simulation models a genetic NAND gate, where the output gene remains active
 
 > Code for this can be found in the files uploaded in this repositery under the name of NAND_Gate
 
+---
 
+### 9. Time Delay Output Circuit
 
+This simulation models a genetic circuit where an output protein (GFP) is only expressed after a delay, requiring the accumulation of an intermediate species. This demonstrates how synthetic systems can introduce controlled response lags using transcriptional cascades. Useful for modeling biological buffering, temporal gating, or delayed activation.
+
+> Code for this can be found in the files uploaded in this repositery under the name of time_delay_output
+
+---
+
+### 10. Pulse Filter Circuit
+
+This simulation models a genetic circuit which filters out short, transient input signals and only allows sustained stimuli to activate the output. Mimics biological systems that ignore noise or spikes, ensuring GFP is only expressed when the input (e.g., IPTG) exceeds a duration threshold. Useful for building noise-resistant or persistence-sensitive genetic devices.
+
+> Code for this can be found in the files uploaded in this repositery under the name of pulse_filter
+
+---
+
+### 11. FeedForward Loop (FFL)
+
+This simulation models a genetic circuit which implements a genetic motif where the input regulates the output both directly and indirectly through an intermediate. This creates a delay in activation or repression depending on the logic type (coherent or incoherent). Demonstrates dynamic filtering, pulse generation, or buffering — commonly found in natural transcriptional networks.
+
+> Code for this can be found in the files uploaded in this repositery under the name of feedfoward_loop
+
+---
+
+### 12. AHL-Triggered Incoherent Feedforward Loop (IFFL)
+
+This simulation models a genetic circuit where AHL acts as the input trigger, activating both the output (GFP) and a repressor that eventually shuts it down. This creates a sharp, transient GFP pulse despite continued AHL presence. Models temporal filtering and fast response-reset behavior — useful for detecting brief signals or generating pulses in synthetic circuits.
+
+> Code for this can be found in the files uploaded in this repositery under the name of AHL-triggered_IFF_Loop
+
+---
+
+### 13. Ramp Generator Circuit
+
+This simulation models a circuit which produces a gradual, linear-like increase in GFP expression over time in response to a constant input. Achieved by controlling feedback strength and degradation rates. Useful for modeling systems requiring slow accumulation, dose-dependent responses, or time-scheduled gene activation in synthetic biology applications.
+
+> Code for this can be found in the files uploaded in this repositery under the name of ramp_generator
+
+---
+
+### 14. 
 ## ⚙️ Tools & Technologies
 
 - **Tellurium** (Python-based simulation)
