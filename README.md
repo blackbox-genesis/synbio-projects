@@ -35,15 +35,7 @@ This simulation models a genetic toggle switch built from two genes that repress
 
 ---
 
-### 5. IPTG-Inducible Toggle Switch
-
-This simulation extends the classic toggle switch by introducing IPTG as an external input signal. When IPTG is present, it inhibits one of the repressors, allowing the circuit to flip into a new state. Even after the signal is removed, the system retains its ON state — demonstrating memory-like behavior. This models how cells can record past exposure to specific signals.
-
-> Code for this circuit can be found in the files uploaded in this repositery under the name of IPTG_toggle
-
----
-
-### 6. Synthetic Genetic AND Gate (Dual Input Control)
+### 5. Synthetic Genetic AND Gate (Dual Input Control)
 
 This simulation models a genetic AND gate, where a target gene is expressed only when both input signals are present. The system mimics digital logic using biological components, combining two separate inducers to control a single output. It demonstrates how synthetic circuits can implement Boolean logic in living systems — a key feature in biosensors and programmable cells.
 
@@ -51,7 +43,7 @@ This simulation models a genetic AND gate, where a target gene is expressed only
 
 ---
 
-### 7. Synthetic Genetic NOT Gate (Signal Repression)
+### 6. Synthetic Genetic NOT Gate (Signal Repression)
 
 This simulation models a genetic NOT gate, where the presence of an input signal represses the output gene. When the input is absent, the output is high; when the input is present, the output is turned off. This simple but powerful logic structure is widely used in constructing more complex synthetic circuits like toggles, switches, and biosensor cascades.
 
@@ -59,7 +51,7 @@ This simulation models a genetic NOT gate, where the presence of an input signal
 
 ---
 
-### 8. Synthetic Genetic NAND Gate (Dual-Repression Logic)
+### 7. Synthetic Genetic NAND Gate (Dual-Repression Logic)
 
 This simulation models a genetic NAND gate, where the output gene remains active unless both input signals are present simultaneously. The system uses dual repression to ensure that the output is only turned off under combined input conditions. As a universal logic gate, NAND can be used to construct any other logic function, making it a powerful component in synthetic biology circuit design.
 
@@ -67,7 +59,7 @@ This simulation models a genetic NAND gate, where the output gene remains active
 
 ---
 
-### 9. Time Delay Output Circuit
+### 8. Time Delay Output Circuit
 
 This simulation models a genetic circuit where an output protein (GFP) is only expressed after a delay, requiring the accumulation of an intermediate species. This demonstrates how synthetic systems can introduce controlled response lags using transcriptional cascades. Useful for modeling biological buffering, temporal gating, or delayed activation.
 
@@ -75,7 +67,7 @@ This simulation models a genetic circuit where an output protein (GFP) is only e
 
 ---
 
-### 10. Pulse Filter Circuit
+### 9. Pulse Filter Circuit
 
 This simulation models a genetic circuit which filters out short, transient input signals and only allows sustained stimuli to activate the output. Mimics biological systems that ignore noise or spikes, ensuring GFP is only expressed when the input (e.g., IPTG) exceeds a duration threshold. Useful for building noise-resistant or persistence-sensitive genetic devices.
 
@@ -83,7 +75,7 @@ This simulation models a genetic circuit which filters out short, transient inpu
 
 ---
 
-### 11. FeedForward Loop (FFL)
+### 10. FeedForward Loop (FFL)
 
 This simulation models a genetic circuit which implements a genetic motif where the input regulates the output both directly and indirectly through an intermediate. This creates a delay in activation or repression depending on the logic type (coherent or incoherent). Demonstrates dynamic filtering, pulse generation, or buffering — commonly found in natural transcriptional networks.
 
@@ -91,7 +83,7 @@ This simulation models a genetic circuit which implements a genetic motif where 
 
 ---
 
-### 12. AHL-Triggered Incoherent Feedforward Loop (IFFL)
+### 11. AHL-Triggered Incoherent Feedforward Loop (IFFL)
 
 This simulation models a genetic circuit where AHL acts as the input trigger, activating both the output (GFP) and a repressor that eventually shuts it down. This creates a sharp, transient GFP pulse despite continued AHL presence. Models temporal filtering and fast response-reset behavior — useful for detecting brief signals or generating pulses in synthetic circuits.
 
@@ -99,7 +91,7 @@ This simulation models a genetic circuit where AHL acts as the input trigger, ac
 
 ---
 
-### 13. Ramp Generator Circuit
+### 12. Ramp Generator Circuit
 
 This simulation models a circuit which produces a gradual, linear-like increase in GFP expression over time in response to a constant input. Achieved by controlling feedback strength and degradation rates. Useful for modeling systems requiring slow accumulation, dose-dependent responses, or time-scheduled gene activation in synthetic biology applications.
 
@@ -107,7 +99,7 @@ This simulation models a circuit which produces a gradual, linear-like increase 
 
 ---
 
-### 14. Threshold-Activated Toggle Switch
+### 13. Threshold-Activated Toggle Switch
 
 This simulation models a genetic circuit which has a bistable circuit that remains OFF at low input levels but flips ON once a critical IPTG threshold is crossed. Uses mutual repression and input-triggered derepression to lock the system in a stable ON state. Demonstrates switch-like behavior, signal memory, and threshold-based activation — key principles in genetic logic design.
 
